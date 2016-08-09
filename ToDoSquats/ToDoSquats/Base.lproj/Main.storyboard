@@ -89,7 +89,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wrL-bd-JQX">
-                                <rect key="frame" x="20" y="138" width="560" height="230"/>
+                                <rect key="frame" x="20" y="138" width="560" height="180"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w3g-qc-zoT">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
@@ -108,10 +108,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbU-83-XjN">
                                         <rect key="frame" x="0.0" y="150" width="560" height="30"/>
                                         <state key="normal" title="Register"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGz-Ut-UzD">
-                                        <rect key="frame" x="0.0" y="200" width="560" height="30"/>
-                                        <state key="normal" title="Sign Up"/>
+                                        <connections>
+                                            <action selector="registerButtonTapped:" destination="xhF-Bi-YJg" eventType="touchUpInside" id="dMu-a4-cTd"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -126,6 +125,10 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Detail" id="9Yp-hK-o10"/>
+                    <connections>
+                        <outlet property="emailField" destination="w3g-qc-zoT" id="xcU-Nz-a5M"/>
+                        <outlet property="passField" destination="6s7-ud-jFo" id="XN8-ua-qEp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p83-lI-vbr" sceneMemberID="firstResponder"/>
             </objects>
