@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F722C28CD7D01B6BD8D9497 /* Pods_ToDoSquats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB7F8B18012BE17B3F45BEA8 /* Pods_ToDoSquats.framework */; };
 		DA4CE8D11D5A7D8D00BB4958 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4CE8D01D5A7D8D00BB4958 /* AppDelegate.swift */; };
 		DA4CE8D31D5A7D8D00BB4958 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4CE8D21D5A7D8D00BB4958 /* MasterViewController.swift */; };
 		DA4CE8D51D5A7D8D00BB4958 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4CE8D41D5A7D8D00BB4958 /* DetailViewController.swift */; };
@@ -17,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4933EA6C781553074A77F752 /* Pods-ToDoSquats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoSquats.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToDoSquats/Pods-ToDoSquats.debug.xcconfig"; sourceTree = "<group>"; };
+		765A560A781A224C0D4B31AD /* Pods-ToDoSquats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoSquats.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToDoSquats/Pods-ToDoSquats.release.xcconfig"; sourceTree = "<group>"; };
+		BB7F8B18012BE17B3F45BEA8 /* Pods_ToDoSquats.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDoSquats.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA4CE8CD1D5A7D8D00BB4958 /* ToDoSquats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoSquats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA4CE8D01D5A7D8D00BB4958 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA4CE8D21D5A7D8D00BB4958 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F722C28CD7D01B6BD8D9497 /* Pods_ToDoSquats.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47438E48E9411A242514EB31 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4933EA6C781553074A77F752 /* Pods-ToDoSquats.debug.xcconfig */,
+				765A560A781A224C0D4B31AD /* Pods-ToDoSquats.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8BBDF95E630888DAE2AA368C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB7F8B18012BE17B3F45BEA8 /* Pods_ToDoSquats.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DA4CE8C41D5A7D8D00BB4958 = {
 			isa = PBXGroup;
 			children = (
 				DA4CE8CF1D5A7D8D00BB4958 /* ToDoSquats */,
 				DA4CE8CE1D5A7D8D00BB4958 /* Products */,
+				47438E48E9411A242514EB31 /* Pods */,
+				8BBDF95E630888DAE2AA368C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA4CE8E11D5A7D8D00BB4958 /* Build configuration list for PBXNativeTarget "ToDoSquats" */;
 			buildPhases = (
+				10A22C28171220856E1436D4 /* [CP] Check Pods Manifest.lock */,
 				DA4CE8C91D5A7D8D00BB4958 /* Sources */,
 				DA4CE8CA1D5A7D8D00BB4958 /* Frameworks */,
 				DA4CE8CB1D5A7D8D00BB4958 /* Resources */,
+				72B710F470A8E383B491E455 /* [CP] Embed Pods Frameworks */,
+				46BD2988FCD68BA2108B5988 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,6 +163,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10A22C28171220856E1436D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		46BD2988FCD68BA2108B5988 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToDoSquats/Pods-ToDoSquats-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72B710F470A8E383B491E455 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToDoSquats/Pods-ToDoSquats-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DA4CE8C91D5A7D8D00BB4958 /* Sources */ = {
@@ -257,6 +332,7 @@
 		};
 		DA4CE8E21D5A7D8D00BB4958 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4933EA6C781553074A77F752 /* Pods-ToDoSquats.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ToDoSquats/Info.plist;
@@ -268,6 +344,7 @@
 		};
 		DA4CE8E31D5A7D8D00BB4958 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 765A560A781A224C0D4B31AD /* Pods-ToDoSquats.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ToDoSquats/Info.plist;
@@ -296,6 +373,7 @@
 				DA4CE8E31D5A7D8D00BB4958 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,6 @@
+framework module Pods_ToDoSquats {
+  umbrella header "Pods-ToDoSquats-umbrella.h"
+
+  export *
+  module * { export * }
+}
