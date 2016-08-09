@@ -15,6 +15,7 @@
 		DA4CE8DA1D5A7D8D00BB4958 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA4CE8D91D5A7D8D00BB4958 /* Assets.xcassets */; };
 		DA4CE8DD1D5A7D8D00BB4958 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA4CE8DB1D5A7D8D00BB4958 /* LaunchScreen.storyboard */; };
 		DA4CE8E51D5A7F4700BB4958 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DA4CE8E41D5A7F4700BB4958 /* GoogleService-Info.plist */; };
+		DA4CE8E71D5A89FF00BB4958 /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4CE8E61D5A89FF00BB4958 /* OnboardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		DA4CE8DC1D5A7D8D00BB4958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA4CE8DE1D5A7D8D00BB4958 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA4CE8E41D5A7F4700BB4958 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DA4CE8E61D5A89FF00BB4958 /* OnboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				DA4CE8D91D5A7D8D00BB4958 /* Assets.xcassets */,
 				DA4CE8DB1D5A7D8D00BB4958 /* LaunchScreen.storyboard */,
 				DA4CE8DE1D5A7D8D00BB4958 /* Info.plist */,
+				DA4CE8E61D5A89FF00BB4958 /* OnboardViewController.swift */,
 			);
 			path = ToDoSquats;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			files = (
 				DA4CE8D51D5A7D8D00BB4958 /* DetailViewController.swift in Sources */,
 				DA4CE8D31D5A7D8D00BB4958 /* MasterViewController.swift in Sources */,
+				DA4CE8E71D5A89FF00BB4958 /* OnboardViewController.swift in Sources */,
 				DA4CE8D11D5A7D8D00BB4958 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
