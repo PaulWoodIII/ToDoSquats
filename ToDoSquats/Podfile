@@ -7,5 +7,6 @@ target 'ToDoSquats' do
 
   # Pods for ToDoSquats
   pod 'Firebase'
-
+  pod 'Firebase/Auth'
+  
 end
