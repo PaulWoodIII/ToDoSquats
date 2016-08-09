@@ -79,7 +79,7 @@
         <!--Onboard-->
         <scene sceneID="Uqj-2z-lj6">
             <objects>
-                <viewController title="Detail" id="xhF-Bi-YJg" userLabel="Onboard" customClass="OnboardViewController" customModule="ToDoSquats" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Onboarding" title="Detail" id="xhF-Bi-YJg" userLabel="Onboard" customClass="OnboardViewController" customModule="ToDoSquats" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ced-EU-kkn"/>
                         <viewControllerLayoutGuide type="bottom" id="wX3-Yu-YcY"/>

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class MasterViewController: UITableViewController {
 
@@ -24,6 +26,20 @@ class MasterViewController: UITableViewController {
         if let split = self.splitViewController {
             let controllers = split.viewControllers
             self.detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
+        }
+        
+
+        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        if let user = FIRAuth.auth()?.currentUser {
+            
+        }
+        else {
+            let onboarding = UIStoryboard(name: "Main", bundle: nil)
+                .instantiateViewControllerWithIdentifier("Onboarding")
+            self.presentViewController(onboarding, animated: true, completion: nil)
         }
     }
 
