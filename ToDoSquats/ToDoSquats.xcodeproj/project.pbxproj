@@ -88,11 +88,11 @@
 				DA4CE8D01D5A7D8D00BB4958 /* AppDelegate.swift */,
 				DA4CE8D21D5A7D8D00BB4958 /* MasterViewController.swift */,
 				DA4CE8D41D5A7D8D00BB4958 /* DetailViewController.swift */,
+				DA4CE8E61D5A89FF00BB4958 /* OnboardViewController.swift */,
 				DA4CE8D61D5A7D8D00BB4958 /* Main.storyboard */,
 				DA4CE8D91D5A7D8D00BB4958 /* Assets.xcassets */,
 				DA4CE8DB1D5A7D8D00BB4958 /* LaunchScreen.storyboard */,
 				DA4CE8DE1D5A7D8D00BB4958 /* Info.plist */,
-				DA4CE8E61D5A89FF00BB4958 /* OnboardViewController.swift */,
 			);
 			path = ToDoSquats;
 			sourceTree = "<group>";
